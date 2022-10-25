@@ -1,1 +1,6 @@
-<p>personal works!</p>
+<app-personal-input></app-personal-input>
+<hr />
+<app-personal-todo
+  [task]="task"
+  *ngFor="let task of getTodos() | async"
+></app-personal-todo>

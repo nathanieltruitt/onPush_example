@@ -1,0 +1,15 @@
+<form class="d-flex" #taskForm="ngForm" (ngSubmit)="submitTask(taskForm)">
+  <div class="form-group">
+    <label class="form-label" for="add-task">Add a personal task</label>
+    <input
+      class="form-control"
+      type="text"
+      id="addTask"
+      name="addTask"
+      ngModel
+    />
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary btn-sm">&plus;</button>
+  </div>
+</form>

@@ -1,1 +1,6 @@
-<p>work works!</p>
+<app-work-input></app-work-input>
+<hr />
+<app-work-todo
+  [task]="task"
+  *ngFor="let task of getTasks() | async"
+></app-work-todo>

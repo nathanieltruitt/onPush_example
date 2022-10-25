@@ -1,0 +1,23 @@
+<div class="container mb-5">
+  <div class="row">
+    <h1>On Push Example</h1>
+    <h2>Open your console</h2>
+    <p>
+      Notice that for personal tasks only three entries are logged into the
+      console, this is because app-personal-input is set to OnPush change
+      detection strategy which means the change detection only runs when any
+      @Input() decorator properies change on the component. Notice how when you
+      type into either input box change detection entries log in the console for
+      every character change for the list on the right. This is because change
+      detection is sent down from the root component to the children.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <app-personal></app-personal>
+  </div>
+  <div class="col-sm-6">
+    <app-work></app-work>
+  </div>
+</div>
